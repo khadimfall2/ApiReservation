@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.reservation.api.reservation.api.DiffusionControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.163 s <<< FAILURE! - in com.reservation.api.reservation.api.DiffusionControllerTest
+testGetDiffusion  Time elapsed: 0.001 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute query; SQL [select diffusion0_.diffusion_id as diffusio1_2_, diffusion0_.date_diffusion as date_dif2_2_, diffusion0_.film_id as film_id3_2_, diffusion0_.horaire_diffusion as horaire_4_2_, diffusion0_.numero_salle as numero_s5_2_ from diffusion diffusion0_]; nested exception is org.hibernate.exception.DataException: could not execute query
+	at com.reservation.api.reservation.api.DiffusionControllerTest.testGetDiffusion(DiffusionControllerTest.java:24)
+Caused by: org.springframework.dao.DataIntegrityViolationException: could not execute query; SQL [select diffusion0_.diffusion_id as diffusio1_2_, diffusion0_.date_diffusion as date_dif2_2_, diffusion0_.film_id as film_id3_2_, diffusion0_.horaire_diffusion as horaire_4_2_, diffusion0_.numero_salle as numero_s5_2_ from diffusion diffusion0_]; nested exception is org.hibernate.exception.DataException: could not execute query
+	at com.reservation.api.reservation.api.DiffusionControllerTest.testGetDiffusion(DiffusionControllerTest.java:24)
+Caused by: org.hibernate.exception.DataException: could not execute query
+	at com.reservation.api.reservation.api.DiffusionControllerTest.testGetDiffusion(DiffusionControllerTest.java:24)
+Caused by: java.sql.SQLDataException: Cannot determine value type from string '25/12/2012'
+	at com.reservation.api.reservation.api.DiffusionControllerTest.testGetDiffusion(DiffusionControllerTest.java:24)
+Caused by: com.mysql.cj.exceptions.DataConversionException: Cannot determine value type from string '25/12/2012'
+	at com.reservation.api.reservation.api.DiffusionControllerTest.testGetDiffusion(DiffusionControllerTest.java:24)
+

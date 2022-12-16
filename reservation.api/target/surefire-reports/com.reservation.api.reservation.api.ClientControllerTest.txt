@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.reservation.api.reservation.api.ClientControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.074 s <<< FAILURE! - in com.reservation.api.reservation.api.ClientControllerTest
+testGetEmployees  Time elapsed: 0.033 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.reservation.api.reservation.api.ClientControllerTest.testGetEmployees(ClientControllerTest.java:29)
+
